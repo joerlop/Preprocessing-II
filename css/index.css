@@ -175,7 +175,7 @@ img {
   height: 100px;
   border-bottom: 2px dashed #C0C0C0;
 }
-@media (max-width: 500px) {
+@media (max-width: 775px) {
   .navigation-top {
     flex-direction: column;
     flex-wrap: wrap;
@@ -189,11 +189,16 @@ img {
   margin-right: 2%;
   margin-left: 10%;
 }
+@media (max-width: 775px) {
+  .navigation-top nav {
+    width: 60%;
+    margin-left: 0;
+    margin-top: 2%;
+  }
+}
 @media (max-width: 500px) {
   .navigation-top nav {
     width: 80%;
-    margin-left: 0;
-    margin-top: 2%;
   }
 }
 .navigation-top nav a {
