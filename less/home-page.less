@@ -52,7 +52,7 @@
 
     @media @phone {
       flex-direction: column-reverse;
-      margin: 0;
+      padding-bottom: 5%;
     }
 
     .text-content {
@@ -69,6 +69,12 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @phone {
+      flex-direction: column;
+      width: 100%;
+      margin: 5% 0;
+    }
 
     img {
       border-radius: 10px;
