@@ -1,1 +1,44 @@
 // Navigation Styles here
+
+.navigation-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 2px dashed @navigation-border;
+
+    @media @tablet {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: none;    
+    }
+
+    nav {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        margin-right: 2%;
+        margin-left: 10%;
+
+        @media @tablet {
+            width: 60%;
+            margin-left: 0;
+            margin-top: 2%;    
+        }
+
+        @media @phone {
+            width: 80%;
+        }
+
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: black;
+        }
+        
+    }
+
+    h1 {
+        font-weight: 600;
+    }
+}
