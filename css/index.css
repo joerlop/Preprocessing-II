@@ -287,7 +287,8 @@ img {
   .home .content-destination {
     flex-direction: column;
     width: 100%;
-    margin: 5% 0;
+    padding: 5% 0;
+    border-bottom: 2px dashed #C0C0C0;
   }
 }
 .home .content-destination img {
@@ -295,13 +296,27 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+  }
 }
 .home .content-pick .destination .btn {
   display: flex;
