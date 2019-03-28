@@ -170,16 +170,31 @@ img {
 }
 .navigation-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .navigation-top {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: none;
+  }
+}
 .navigation-top nav {
   display: flex;
-  width: 40%;
+  width: 30%;
   justify-content: space-between;
   margin-right: 2%;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  .navigation-top nav {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 2%;
+  }
 }
 .navigation-top nav a {
   font-size: 1.6rem;
@@ -247,9 +262,25 @@ img {
   margin-bottom: 30px;
 }
 .home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  background: red;
-  border-radius: 3px;
+  background: #008080;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding: 5% 0;
+  color: white;
+  width: 90%;
+}
+@media (max-width: 500px) {
+  .home header {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 .home header h1 {
   margin-top: 2.5%;

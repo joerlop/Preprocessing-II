@@ -2,16 +2,29 @@
 
 .navigation-top {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 100px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @phone {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: none;
+    }
+
     nav {
         display: flex;
-        width: 40%;
+        width: 30%;
         justify-content: space-between;
         margin-right: 2%;
+        margin-left: 10%;
+
+        @media @phone {
+            width: 80%;
+            margin-left: 0;
+            margin-top: 2%;
+        }
 
         a {
             font-size: 1.6rem;
