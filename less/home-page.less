@@ -71,8 +71,12 @@
   }
 
   .content-destination {
-    width: 75%;
+    width: 100%;
     margin: 0 auto 30px;
+    padding-bottom: 5%;
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    justify-content: center;
 
     @media @phone {
       flex-direction: column;
@@ -83,6 +87,14 @@
 
     img {
       border-radius: 10px;
+    }
+
+    .bottom-content-destination {
+      width: 80%;
+
+      @media @phone {
+        width: 100%;
+      }
     }
   }
 
